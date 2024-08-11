@@ -10,7 +10,7 @@ import { FirebaseService } from './firebase.service';
     {
       provide: 'FIREBASE_ADMIN',
       useFactory: function (config: ConfigService) {
-        admin.initializeApp({
+        return admin.initializeApp({
           credential: admin.credential.cert(
             serviceAccount as admin.ServiceAccount,
           ),
