@@ -18,6 +18,7 @@ export class FirebaseService {
     try {
       await this.firebaseApp.messaging().send(message);
     } catch (error) {
+      console.error('Error sending message:', error);
       throw new HttpException('Error sending message', 400);
     }
   }

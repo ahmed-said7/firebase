@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import * as admin from 'firebase-admin';
-import serviceAccount from './config.json';
+import serviceAccount from './social-educational-v2-firebase-adminsdk-qsws6-d5657dee21.json';
 import { ConfigService } from '@nestjs/config';
 import { FirebaseService } from './firebase.service';
 
